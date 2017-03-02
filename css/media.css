@@ -1,0 +1,273 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.nav-menu li {
+		font-size: 11px;
+		margin: 0 3px;
+	}
+	header button {
+	height: 35px;
+	width: 131px;
+	margin-top: 5px;
+	font-size: 6pt;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	header button {
+		display: none;
+	}
+	.main-text {
+		font-size: 38pt;
+		width: 70%;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.main-text {
+		font-size: 25pt;
+	}
+	.nav-menu {
+		display: none;
+	}
+	.toggle-nav {
+		display: inline-block;
+		padding:20px;
+		float:right;
+		font-size: 28px;
+		color: #000;
+	}
+ 
+.toggle-nav:hover, .toggle-nav.active {
+	text-decoration:none;
+	color:#7ed7ce;
+}
+header button {
+	display: none;
+}
+
+.active {
+        display:none;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.top-section .container h1 {
+		font-size: 19pt;
+	}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/*----- Toggle Button -----*/
+.toggle-nav {
+    display:none;
+}
+ 
+ 
+.menu ul {
+    display:inline-block;
+}
+
+.menu a:hover, .menu .current-item a {
+    text-decoration:none;
+}
+
+
+@media screen and (max-width: 768px) {
+	
+	.carousel-caption h2{
+		font-size: 18px;
+	}
+
+	.top-section .container h1 {
+	font-size: 27pt;
+	}
+	.text-style {
+		font-size: 25pt;
+	}
+	.logo {
+		font-size: 18px;
+		margin-top: 0px;
+		margin-left: 4px;
+		width: auto;
+	}
+	.contact {
+		margin-top: 0;
+		margin-left: 50px;
+	}
+.contact-fs-26 {
+    font-size: 18px;
+}
+.contact-fs-16 {
+	font-size: 14px;
+	}
+
+.menu {
+  display:inline-block;
+}
+
+.menu ul.active {
+  display:none;
+}
+
+.menu ul {
+  width:100%;
+  height: 1000px;
+  position:absolute;
+  top: 80%;
+  left: 0px;
+  padding: 17px 18px;
+  box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+  border-radius:3px;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding-top: 90px;
+}
+
+.menu li {
+  margin: -16px 0px -22px 0px;
+  float:none;
+  display:block;
+  font-size: 18px;
+}
+
+.nav-menu li a{
+	color: white;
+}
+.nav-menu li a:hover{
+	    background-color: rgba(0,0,0,0.4);
+}
+.nav-menu i {
+	margin-bottom: 25px;
+}
+.menu a {
+  display:block;
+
+}
+
+.toggle-nav {
+  padding:20px;
+  float:right;
+  display:inline-block;
+}
+.why-us {
+	font-size: 22pt;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.item {
+		height: 300px !important;
+	}
+
+.why-us {
+	font-size: 18pt;
+	}
+
+.contact {
+	font-size: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.contact-fs-26 {
+    font-size: 14px;
+}
+.contact-fs-16 {
+	font-size: 12px;
+	}
+
+.top-section .container h1 {
+	font-size: 22pt;
+	}
+	.text-style {
+		font-size: 20pt;
+	}
+
+	.main-text {
+		font-size: 14pt;
+		width: 90%;
+	}
+	.main-text span {
+		top: -21px;
+    left: -19px;
+
+	}
+	.main-text span img {
+		width: 40px;
+		height: 40px;
+	}
+
+
+}
+
+@media only screen and (max-width : 320px) {
+	.why-us {
+	font-size: 15pt;
+	}
+	.top-section .container h1 {
+		font-size: 19pt;
+	}
+	.text-style {
+		font-size: 17pt;
+	}
+
+}

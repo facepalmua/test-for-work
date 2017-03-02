@@ -1,0 +1,341 @@
+@import "bourbon/bourbon"
+
+$bg_grad: linear-gradient(to bottom, #4fcce4 0%, #6cd1b5 100%)
+$main_color: #7ed7ce
+$bg_color: #f1f1f3
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+input
+	outline:none !important
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "RobotoRegular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+
+
+// HEADER
+header
+	height: 80px
+	background-color: #f8f9fb
+	width: 100%
+	position: fixed
+	z-index: 9999
+	display: inline-block
+	clear: both
+	.row
+		margin-top: 10px
+	button
+		background: linear-gradient(to bottom, #4fcce4 0%, #6cd1b5 100%)
+		color: #fff
+		text-transform: uppercase
+		padding: 0 2.5%
+		-webkit-transition: all .25s ease
+		transition: all .25s ease
+		float: right
+		border: none
+		height: 50px
+		width: 210px
+		padding: 0
+		margin-top: 15px
+		font-size: 10pt
+		&:hover
+			background: linear-gradient(to top, #4fcce4 0%, #6cd1b5 100%)
+			transition: all .25s ease
+			border-radius: 25px
+.logo 
+	font-family: "Oswald"
+	font-weight: 600
+	float: left
+	font-size: 26pt
+	width: 200px
+	height: 57px
+	margin-top: -8px
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5)
+	p span
+		color: $main_color
+		margin-right: 5px
+	img
+		width: 200px
+		height: 60px
+
+.logo .it-lab
+	font-size: 11pt
+	color: black
+	font-family: "Roboto"
+	font-weight: 300
+	display: block
+.nav-menu
+	float: left
+	position: relative
+	top: -8px
+	left: -49px
+	i
+		font-size: 18pt
+		color: #56cdd8
+	li
+		display: inline-block
+		margin: 0 5px
+		text-transform: uppercase
+		font-size: 12px
+		cursor: pointer
+		line-height: 78px
+		font-size: 14px
+		&:last-child
+			margin: 0
+		a
+			text-decoration: none
+			color: #3b3b3b
+			font-weight: 700
+			&:hover
+				color: $main_color
+
+.contact
+	display: inline-block
+	line-height: 1.3
+	margin-top: -10px
+	font-weight: 600
+	i
+		font-size: 13pt
+		color: #979595
+
+.contact-fs-26
+	font-size: 26px
+
+.contact-fs-16
+	font-size: 16px
+
+.toggle-nav
+	display: none
+
+// HEADER END
+
+// SECTION #1
+
+.top-section 
+	background-image: url(../img/theader_bg.jpg)
+	background-size: cover
+	background-position: top center
+	height: 660px
+	button
+		background: linear-gradient(to bottom, #4fcce4 0%, #6cd1b5 100%)
+		color: #fff
+		text-transform: uppercase
+		padding: 0 2.5%
+		-webkit-transition: all .25s ease
+		transition: all .25s ease
+		border: none
+		height: 50px
+		width: 210px
+		padding: 0
+		margin-top: 15px
+		font-size: 10pt
+		&:hover
+			background: linear-gradient(to top, #4fcce4 0%, #6cd1b5 100%)
+			transition: all .25s ease
+			border-radius: 25px
+	.container
+		text-align: center
+		margin-top: 150px
+		position: absolute
+		width: 100%
+		h1 
+			color: white
+			font-size: 30pt
+			font-weight: 700
+.text-style
+	font-size: 30pt
+	color: white
+.main-text
+	font-size: 45pt
+	background-color: rgba(255, 255, 255, .5)
+	padding: 10px
+	color: #FF3f00
+	width: 55%
+	margin: auto
+	border: 1px solid white
+	font-weight: 700
+	position: relative
+	span
+		position: absolute
+		top: -50px
+		left: -50px
+		img
+			width: 80px
+			height: 80px
+		// SECTION #1 END
+
+
+		// SECTION #2 
+.why-us
+	text-align: center
+	font-size: 32pt
+	text-align: center
+	margin-bottom: 25px
+	margin-top: 50px
+	+kerning(3)
+.why-us__why-us-content_item_circle 
+	border: 1px solid #d8d8d9
+	width: 160px
+	height: 160px
+	border-radius: 50%
+	margin: auto
+	margin-bottom: 35px
+	background-color: #f8f8f8
+	transition: all 1s ease
+	&:hover
+		background: -webkit-linear-gradient(top, #4fcce4 0%, #6cd1b5 100%)
+		background: linear-gradient(to bottom, #4fcce4 0%, #6cd1b5 100%)
+		transition: all 1s ease
+	&:hover
+		svg
+			path
+				fill: #fff!important
+	path
+		transition: all 1s ease
+		fill: #6cd1b5!important
+		&:hover
+			fill: white!important
+	svg
+		position: relative
+		top: 18px
+		left: 34px
+		width: 100px
+		height: 100px
+
+.why-us__why-us-content_item
+	p
+		font-size: 16pt
+		font-weight: 700
+		text-align: center
+
+
+		// SECTION #2 END
+
+		// SECTION #3 (Slider) 
+.item
+	background: #333
+	text-align: center
+	height: 400px !important
+
+
+.carousel-control.right
+	right: -60px
+	left: auto
+	top: 134px
+	font-size: 29pt
+	color: rgb(108, 209, 181)
+	background-image: none
+
+.carousel-control.left
+	right: auto
+	left: -60px
+	top: 134px
+	font-size: 29pt
+	color: rgb(108, 209, 181)
+	background-image: none
+
+.carousel-caption 
+	text-align: center
+	float: right
+	margin-left: 40%
+	margin-bottom: 6%
+	width: 32%
+	h2
+		font-weight: 700
+
+			// SECTION #3 (Slider) END
+
+.text-after-h2 
+	text-align: center
+	font-size: 16pt
+	font-weight: 900
+	margin-bottom: 65px
+
+.test li 
+	list-style-type: none
+	display: inline-block
+
+.holder
+	position: relative
+	&:hover .block
+		display: block
+.block
+	position:absolute
+	left:0
+	bottom:0
+	right:0
+	top:0
+	height: 55%
+	background-color: rgba(89, 203, 250, .8)
+	padding:5px
+	display:none
+	text-align: center
+	i
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		background-color: white
+		line-height: 50px
+		font-size: 20pt
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -25px
+		margin-top: -25px
+	.name-port
+		text-align: center
+		position:absolute
+		left:0
+		bottom:0
+		right:0
+		top:0
+		margin-top: 36%
+		height: 73%
+		background-color: rgba(240, 240, 242, .9)
+		padding-top: 25px
+		font-size: 18pt
+		font-weight: 700
+
